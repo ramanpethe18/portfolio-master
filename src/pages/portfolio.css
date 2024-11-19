@@ -1,0 +1,241 @@
+/* portfolio.css */
+
+/* Add Nunito Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+/* Apply Nunito Sans font to portfolio */
+.portfolio-container,
+.portfolio-about-me,
+.portfolio-experience {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.portfolio-container {
+  padding: 20px;
+  margin-top: 60px;
+  margin-left: 220px;
+  background-color: #e0e5ec; /* Background color */
+  border-radius: 12px; /* Soften edges */
+  box-shadow: 2px 2px 10px #b8c0ca, 
+             -2px -2px 10px #ffffff; /* Neumorphism box shadow */
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Define animation keyframes for floating effect */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+    opacity: 0.8;
+  }
+}
+
+/* Apply animation to the image */
+.portfolio-header-image {
+  animation: floatAnimation 4s cubic-bezier(0.25, 0.5, 0.5, 0.9) infinite; /* Apply floating animation */
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+
+.portfolio-header-info {
+  flex-basis: 50%;
+}
+
+.portfolio-header-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+
+  /* Add animation keyframes */
+  @keyframes autoWrite {
+    0% {
+      width: 0; /* Start with zero width */
+    }
+    100% {
+      width: 100%; /* End with full width */
+    }
+  }
+  
+  /* Apply animation to the <p> element */
+  .portfolio-header-info p {
+    font-size: 2rem;
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: autoWrite 3s steps(40) infinite; /* Apply animation */
+    animation-delay: calc(0.1s * var(--i)); /* Delay each character */
+    color: #666; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  /* Additional styling for the cursor */
+  .portfolio-header-info p::after {
+    content: '|'; /* Cursor */
+    display: inline-block;
+    animation: blink 3s infinite; /* Blinking animation for cursor */
+  }
+  
+  /* Blinking animation for cursor */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .portfolio-about-me {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #f0f3f7; /* Background color */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff; /* Neumorphism box shadow */
+  }
+  
+  .portfolio-about-me-image {
+    flex-basis: 35%;
+    max-width: 35%;
+  }
+  
+  .portfolio-about-me-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+  .portfolio-about-me-info-git {
+    flex-basis: 65%; /* Adjust the width percentage as needed */
+    
+  }
+
+  .portfolio-about-me-info {
+    padding-left: 20px; /* Add some padding for separation */
+  }
+  
+  .portfolio-about-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-about-me p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .portfolio-github {
+    margin-top: 20px; /* Add some space between "About Me" and GitHub section */
+    margin-left: 10px;
+  }
+
+  .portfolio-github img {
+      width: 100%; /* Ensure the GitHub streak stats image fills its container */
+      border-radius: 10px; /* Add rounded corners */
+      box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff; /* Neumorphism box shadow */
+  }
+  
+
+.portfolio-experience {
+  background-color: #f0f3f7; /* Background color */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff; /* Neumorphism box shadow */
+  margin-bottom: 20px;
+}
+
+.portfolio-experience h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.experience-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100px;
+  background-color: #e0e5ec; /* Light background color */
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff; /* Neumorphism box shadow */
+}
+
+.experience-item .icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.experience-item span {
+  font-size: 16px;
+  text-align: center;
+}
+
+.portfolio-projects {
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+
+/* Media query for screens below 480px */
+@media screen and (max-width: 480px) {
+  .portfolio-container {
+    margin-left: 10px; /* Remove left margin */
+    margin-right: 10px; /* Remove right margin */
+  }
+
+  .portfolio-projects {
+    margin-left: -10px;
+  }
+
+  .portfolio-header-info h2,
+  .portfolio-header-info p,
+  .portfolio-experience h3 {
+    font-size: 12px; /* Further decrease font size for small screens */
+  }
+
+  .portfolio-about-me h2,
+  .portfolio-about-me p {
+    font-size: 10px;
+  }
+
+  .portfolio-about-me {
+    margin-left: 0px; /* Adjust left margin */
+    margin-right: 0px; /* Adjust right margin */
+  }
+
+  .experience-item {
+    padding: 5px;
+  }
+
+  .experience-details {
+    gap: 15px;
+}
+}

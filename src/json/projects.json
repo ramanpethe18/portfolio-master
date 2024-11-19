@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Learnhattan",
+    "description": "A web 3 based education platform where students can earn by learning.",
+    "tags": ["MERN", "React", "JavaScript", "Tech Lead"],
+    "imageUrl": "https://cdn-developer-wp.arc.dev/wp-content/uploads/2022/06/coding-programming-project-ideas.jpg",
+    "projectUrl": "https://learnhattan.vercel.app/"
+
+  },
+  {
+    "title": "Express Motors",
+    "description": "A one-stop platform to explore cars and buy them at best price.",
+    "tags": ["Drupal", "JavaScript", "CSS", "Frontend"],
+    "imageUrl": "https://express-motors.krushna53.com/sites/default/files/express_motors_logo_dark_0.png",
+    "projectUrl": "https://express-motors.krushna53.com/"
+  },
+  {
+    "title": "Portfolio",
+    "description": "My personal portfolio website that showcases my projects and skills.",
+    "tags": ["React", "JavaScript", "Frontend"],
+    "imageUrl": "https://cdn-developer-wp.arc.dev/wp-content/uploads/2022/06/coding-programming-project-ideas.jpg",
+    "projectUrl": "https://portfolio-yogirajpps-projects.vercel.app/"
+  },
+  {
+    "title": "Property Estate",
+    "description": "A platform were anyone can buy and sell the property without brokers.",
+    "tags": ["Drupal", "JavaScript", "CSS", "Frontend"],
+    "imageUrl": "https://propertyestate.netlify.app/static/media/yariga.50e838bc0f04e94c4effa140d3467b5f.svg",
+    "projectUrl": "https://propertyestate.netlify.app/"
+  },
+  {
+    "title": "Yugma Ventures",
+    "description": "A portfolio website for a venture company showcasing their projects and services.",
+    "tags": ["React", "Frontend"],
+    "imageUrl": "https://yugmav.in/static/media/yg.639292617274fc2f0e97.webp",
+    "projectUrl": "https://yugmav.in/"
+  },
+  {
+    "title": "The Andra Cafe",
+    "description": "A restaurant website for online ordering and reservations.",
+    "tags": ["React", "Django", "Full Stack Development"],
+    "imageUrl": "https://cdn-developer-wp.arc.dev/wp-content/uploads/2022/06/coding-programming-project-ideas.jpg",
+    "projectUrl": "https://theandhracafe.in/"
+  }
+]

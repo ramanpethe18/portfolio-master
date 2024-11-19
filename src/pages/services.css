@@ -1,0 +1,127 @@
+/* services.css */
+
+.services {
+    margin-left: 220px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f0f3f7; /* Light background color */
+    border-radius: 20px;
+    box-shadow: 6px 6px 16px #c4c4c4, 
+               -6px -6px 16px #ffffff; /* Neumorphism box shadow */
+  }
+  
+  .services h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Heading color */
+  }
+  
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .service-item {
+    background-color: #f0f3f7; /* Light background color */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 16px #c4c4c4, 
+               -6px -6px 16px #ffffff; /* Neumorphism box shadow */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    box-shadow: 3px 3px 10px #c4c4c4, 
+               -3px -3px 10px #ffffff; /* Neumorphism box shadow on hover */
+  }
+  
+  .service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Heading color */
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; /* Text color */
+  }
+
+  .service-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff; /* Neumorphism box shadow */
+  }
+  
+
+  .service-form-group {
+    padding: 20px;
+    margin-right: 30px;
+  }
+  
+  .service-form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f0f3f7;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff;
+    font-size: 16px;
+    margin-top: 5px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  select:focus,
+  textarea:focus {
+    box-shadow: 3px 3px 10px #b8c0ca, -3px -3px 10px #ffffff;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+
+
+  /* Media query for screens below 480px */
+@media screen and (max-width: 480px) {
+  .services {
+    margin-left: 0px; /* Adjust left margin */
+    margin-right: 0px; /* Adjust right margin */
+  }
+}
+  

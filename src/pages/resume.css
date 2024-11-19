@@ -1,0 +1,60 @@
+.resume-container { 
+    padding: 20px;
+    margin-left: 220px;
+    margin-top: 60px;
+    background-color: #f0f3f7; /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff; /* Neumorphism box shadow */
+  }
+
+  .resume-pdf-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .resume-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .resume-container img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+  .resume-pdf {
+    padding: 20px;
+    /* width: 150px;
+    height: 40px; */
+    color: black;
+    background-color: #e0e5ec;
+    border: none;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .resume-pdf:focus {
+    outline: none;
+  }
+  
+  .resume-pdf:hover {
+    box-shadow: 3px 3px 10px #b8c0ca, -3px -3px 10px #ffffff;
+  }
+  
+  .resume-pdf:active {
+    transform: translateY(2px);
+  }
+  
+  /* Media query for screens below 480px */
+@media screen and (max-width: 480px) {
+  .resume-container {
+    margin-left: 10px; /* Adjust left margin */
+    margin-right: 10px; /* Adjust right margin */
+  }
+}

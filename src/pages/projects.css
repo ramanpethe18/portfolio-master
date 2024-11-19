@@ -1,0 +1,28 @@
+/* Projects.css */
+.projects{
+  margin-left: 220px;
+  margin-top: 60px;
+  background-color: #e0e5ec; /* Background color */
+  padding: 20px; /* Add padding for space around the grid */
+  border-radius: 12px; /* Soften edges */
+  box-shadow: 5px 5px 15px #b8c0ca, 
+             -5px -5px 15px #ffffff; /* Neumorphism box shadow */
+}
+
+.projects-content {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  
+  }
+  
+
+  /* Media query for screens below 480px */
+  @media screen and (max-width: 480px) {
+    .projects {
+      margin-left: 0px; /* Adjust left margin */
+      margin-right: 0px; /* Adjust right margin */
+    }
+  }
+  

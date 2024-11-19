@@ -1,0 +1,94 @@
+/* Footer.css */
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .footer-redirect-container {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+
+  .button-qr-container {
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    gap: 15px; /* Add spacing between buttons */
+    align-items: flex-end;
+  }
+  
+  .button {
+    width: 100px;
+    height: 40px;
+    background-color: #e0e5ec; /* Light background color */
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff; /* Neumorphism box shadow */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:hover {
+    box-shadow: 3px 3px 10px #b8c0ca, -3px -3px 10px #ffffff; /* Neumorphism box shadow on hover */
+  }
+  
+/* Add styling for the active state of the button */
+  .button.active {
+        background-color: #333; /* Dark background color for active button */
+        color: #fff; /* White text color for active button */
+  }
+  
+  .qr-code {
+    margin-top: 20px;
+    width: 250px;
+    /* height: auto; */
+  }
+  
+
+  /* Media query for screens below 480px */
+@media screen and (max-width: 480px) {
+  .button {
+    width: 80px; /* Adjust button width for smaller screens */
+    font-size: 12px;
+  }
+
+  .footer-container {
+    margin-bottom: 80px;
+  }
+  
+  .footer-redirect-container {
+    flex-basis: 100%; /* Full width for small screens */
+    max-width: 100%;
+    text-align: center; /* Center align text for small screens */
+    
+  }
+  
+  .button-qr-container {
+    flex-basis: 100%; /* Full width for small screens */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    gap: 15px; /* Add spacing between buttons */
+    align-items: center; /* Center align items for small screens */
+  }
+
+  .qr-code {
+    margin-top: 20px;
+    width: 200px;
+    /* height: auto; */
+  }
+}
